@@ -45,8 +45,6 @@ class AuthController extends Controller
             'email' => 'required|email|unique:clients',
             'phone' => 'required',
             'address' => 'required',
-            'city' => 'required',
-            'postal_code' => 'required',
         ]);
 
         //Generate a random password to send by email
@@ -57,8 +55,6 @@ class AuthController extends Controller
             'email' => $validationDate['email'],
             'phone' => $validationDate['phone'],
             'address' => $validationDate['address'],
-            'city' => $validationDate['city'],
-            'postal_code' => $validationDate['postal_code'],
             'password' => Hash::make($password)
         ]);
 

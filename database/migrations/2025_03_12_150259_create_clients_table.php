@@ -18,8 +18,6 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->string('phone');
             $table->string('address');
-            $table->string('city');
-            $table->string('postal_code');
             $table->string('password');
             $table->boolean('change_password')->default(true);
             $table->timestamps();

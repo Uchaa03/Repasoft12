@@ -18,8 +18,6 @@ class Client extends Authenticatable
         'email',
         'phone',
         'address',
-        'city',
-        'postal_code',
         'password',
         'change_password',
     ];
