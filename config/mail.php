@@ -6,9 +6,6 @@ return [
     'mailers' => [
         'sendgrid' => [
             'transport' => 'sendgrid',
-            'api_key' => env('SENDGRID_API_KEY'),
-            'version' => 'v3',
-            'endpoint' => 'https://api.sendgrid.com/v3/mail/send'
         ],
 
         'ses' => [
