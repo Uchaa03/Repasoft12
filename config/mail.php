@@ -6,6 +6,7 @@ return [
     'mailers' => [
         'sendgrid' => [
             'transport' => 'sendgrid',
+            'port' => env('MAIL_PORT', 587),
         ],
 
         'ses' => [
