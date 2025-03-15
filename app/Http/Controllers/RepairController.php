@@ -175,7 +175,4 @@ class RepairController extends Controller
         }
     }
 
-
-
-
 }
